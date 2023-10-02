@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    top: 50px;
+    position: relative;
+}
+
+.menuBar>li {
+    list-style-type: none;
+    margin-left: 50px;
+    position: relative;
+    
+
+}
+
+.menuBar>li>a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.menuBar {
+    display: flex;
+}
+
+.menuBar>li::after{
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: gold;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 10px;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transition-delay: 0;
+}
+.menuBar>li:hover::after{
+    content: '';
+    width: 100%;
+    height: 5px;
+    background-color: blue;
+}
+
+.menuBar>li::before{
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: gold;
+    right: 0;
+    bottom: 0;
+    padding-right: 10px;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transition-delay: 1s;
+}
+.menuBar>li:hover::before{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+.menuBar>li>a::after{
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: gold;
+    right: 0;
+    top: 0;
+    padding-top: 10px;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transition-delay: 3s;
+}
+.menuBar>li>a:hover::before{
+    content: '';
+    width: 100%;
+    height: 0;
+    background-color: blue;
+}
+
+.menuBar>li>a::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    padding-top: 10px;
+    background-color: gold;
+    left: 0;
+    top: 0;
+    position: absolute;
+    transition: 1s ease-in-out;
+    transition-delay: 4s;
+}
+.menuBar>li>a:hover::after{
+    content: '';
+    width: 0;
+    height: 100%;
+    background-color: blue;
+}
