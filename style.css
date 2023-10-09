@@ -11,7 +11,7 @@ body {
 .main {
     width: 100%;
     height: 100vh;
-    background-image: url(Image/image.jpg);
+    background-image: url('./Image/image.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -74,7 +74,7 @@ body {
 }
 
 .menuName>li:hover>a {
-    color: #b56510bd;
+    color: #38ee05f9;
     transition: 0.5s;
 
 }
